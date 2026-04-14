@@ -1,0 +1,281 @@
+@import url('stock.css');
+
+.about-commodity-text {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin: 0;
+}
+
+
+
+.ingot-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+
+.ingot-bar {
+    width: 150px;
+    border-radius: 16px;
+    padding: 1.1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.65rem;
+    box-shadow:
+        0 2px 6px rgba(0,0,0,0.18),
+        inset 0 1px 0 rgba(255,255,255,0.45),
+        inset 0 -2px 4px rgba(0,0,0,0.12);
+}
+
+.ingot-stamp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingot-stamp-outer {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: 2px solid currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.55;
+    position: relative;
+}
+
+.ingot-stamp-outer::before {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    border-radius: 50%;
+    border: 1px dashed currentColor;
+    opacity: 0.6;
+}
+
+.ingot-stamp-inner {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingot-stamp-symbol {
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+}
+
+.ingot-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+
+.ingot-weight {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.ingot-purity {
+    font-size: 0.82rem;
+    font-weight: 600;
+    opacity: 0.75;
+    letter-spacing: 0.04em;
+}
+
+.ingot-name {
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    opacity: 0.55;
+}
+
+
+.ingot-gold .ingot-bar {
+    background: radial-gradient(ellipse at 40% 35%, #fff0a0 0%, #e8c030 35%, #c8960c 65%, #a87808 100%);
+    color: #4a3000;
+}
+
+
+.ingot-silver .ingot-bar {
+    background: radial-gradient(ellipse at 40% 35%, #ffffff 0%, #d8d8d8 35%, #a8a8a8 65%, #888 100%);
+    color: #2a2a2a;
+}
+
+
+.ingot-platinum .ingot-bar {
+    background: radial-gradient(ellipse at 40% 35%, #f8f9fc 0%, #d4d8e0 35%, #a8aec0 65%, #8890a0 100%);
+    color: #20242e;
+}
+
+
+.ingot-copper .ingot-bar {
+    background: radial-gradient(ellipse at 40% 35%, #f0a060 0%, #c86020 35%, #8a3a10 65%, #5c2008 100%);
+    color: #2a1008;
+}
+
+
+.ingot-palladium .ingot-bar {
+    background: radial-gradient(ellipse at 40% 35%, #edf0f8 0%, #bcc0d0 35%, #909ab0 65%, #687080 100%);
+    color: #1a1e2a;
+}
+
+
+
+.barrel-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.6rem;
+}
+
+.barrel-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+}
+
+.barrel-top-ellipse {
+    width: 90px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.barrel-cylinder {
+    width: 90px;
+    margin-top: -11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0.5rem 0;
+}
+
+.barrel-band {
+    width: 100%;
+    height: 6px;
+    border-radius: 2px;
+    margin: 3px 0;
+}
+
+.barrel-label-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 0.4rem 0;
+}
+
+.barrel-label-text {
+    font-size: 0.58rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+}
+
+.barrel-grade {
+    font-size: 0.52rem;
+    letter-spacing: 0.08em;
+    opacity: 0.65;
+}
+
+.barrel-bottom-ellipse {
+    width: 90px;
+    height: 22px;
+    border-radius: 50%;
+    margin-top: -11px;
+}
+
+
+.barrel-wti .barrel-top-ellipse    { background: radial-gradient(ellipse, #777 0%, #3a3a3a 100%); }
+.barrel-wti .barrel-cylinder       { background: linear-gradient(to right, #2e2e2e 0%, #5a5a5a 30%, #3e3e3e 70%, #222 100%); color: #e0e0e0; }
+.barrel-wti .barrel-band           { background: linear-gradient(to right, #888, #aaa, #888); }
+.barrel-wti .barrel-bottom-ellipse { background: radial-gradient(ellipse, #4a4a4a 0%, #222 100%); }
+
+
+.barrel-brent .barrel-top-ellipse    { background: radial-gradient(ellipse, #4a3020 0%, #1a0e08 100%); }
+.barrel-brent .barrel-cylinder       { background: linear-gradient(to right, #1c1008 0%, #3a2010 30%, #2a1808 70%, #100800 100%); color: #d4a870; }
+.barrel-brent .barrel-band           { background: linear-gradient(to right, #5a3818, #8a5828, #5a3818); }
+.barrel-brent .barrel-bottom-ellipse { background: radial-gradient(ellipse, #2a1808 0%, #0e0804 100%); }
+
+
+
+.flame-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.6rem;
+    gap: 0.5rem;
+}
+
+.flame-container {
+    position: relative;
+    width: 60px;
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.flame-outer {
+    width: 60px;
+    height: 80px;
+    border-radius: 50% 50% 30% 30% / 60% 60% 30% 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flame-mid {
+    width: 40px;
+    height: 56px;
+    border-radius: 50% 50% 30% 30% / 60% 60% 30% 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flame-inner {
+    width: 22px;
+    height: 32px;
+    border-radius: 50% 50% 30% 30% / 60% 60% 30% 30%;
+}
+
+.flame-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+
+.flame-label {
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+}
+
+.flame-sublabel {
+    font-size: 0.55rem;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    opacity: 0.65;
+}
+
+
+.flame-gas .flame-outer  { background: radial-gradient(ellipse at 50% 80%, #1a6fff 0%, #0044cc 60%, transparent 100%); }
+.flame-gas .flame-mid    { background: radial-gradient(ellipse at 50% 80%, #60aaff 0%, #1a6fff 70%, transparent 100%); }
+.flame-gas .flame-inner  { background: radial-gradient(ellipse at 50% 80%, #ffffff 0%, #aaddff 60%, #60aaff 100%);     }
+
+
+.flame-heat .flame-outer { background: radial-gradient(ellipse at 50% 80%, #cc4400 0%, #882200 60%, transparent 100%); }
+.flame-heat .flame-mid   { background: radial-gradient(ellipse at 50% 80%, #ff8800 0%, #cc4400 70%, transparent 100%); }
+.flame-heat .flame-inner { background: radial-gradient(ellipse at 50% 80%, #ffee88 0%, #ffcc00 50%, #ff8800 100%);      }

@@ -1,0 +1,116 @@
+@import url('stock.css');
+
+.trade-qty-ctrl input {
+    width: 130px;
+    text-align: right;
+}
+
+.etf-dist-wrap {
+    margin-top: 36px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.etf-dist-bar {
+    display: flex;
+    height: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    gap: 2px;
+}
+
+.etf-dist-segment { height: 100%; transition: opacity 0.15s; }
+.etf-dist-segment:hover { opacity: 0.8; }
+
+.etf-dist-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+}
+
+.etf-dist-legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; }
+
+.etf-dist-label { color: var(--text); }
+
+.etf-dist-pct { color: var(--text-muted); font-weight: 600; }
+
+.etf-holdings-list { display: flex; flex-direction: column; gap: 10px; }
+
+.etf-holding-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.etf-holding-type-icon {
+    flex-shrink: 0;
+    width: 20px;
+    text-align: center;
+    font-size: 0.82rem;
+}
+
+.etf-holding-left {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex: 0 0 120px;
+}
+
+.etf-holding-symbol {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.etf-holding-name {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.etf-holding-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.etf-holding-bar-wrap {
+    flex: 1;
+    height: 5px;
+    background: var(--surface-alt);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.etf-holding-bar {
+    height: 100%;
+    background: var(--brand-primary);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.etf-holding-weight {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text);
+    min-width: 44px;
+    text-align: right;
+}
+
+.etf-holding-link {
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.15s;
+}
+
+.etf-holding-link:hover { background: var(--surface-alt); }
+.etf-holding-link:hover .etf-holding-symbol { color: var(--brand-primary); }
+
+.etf-holding-chevron { font-size: 0.65rem; color: var(--text-muted); flex-shrink: 0; }

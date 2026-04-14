@@ -1,0 +1,23 @@
+IDEAS:
+
+*	Python/NodeJS pentru preturile de la bursa 
+*	Mockup pentru stock-urile care nu sunt incluse in API (variatia random a preturilor)
+*	Optiune de schimb valutar (adaugare in RON, conversie pentru achizitie stock-uri in USD/EUR)
+*	Support Center pentru clienti (mesaj/formular catre administrator, chat, etc.)
+*	Cumparare/vanzare titluri de stat/obligatiuni
+*	Istoric tranzactii pentru client
+*	Istoric evolutie preturi
+*	Simulare plati
+
+BACKEND:
+	* Python / NodeJS (in functie de API-uri existente)
+
+FRONTEND:
+	* React
+	* HINT: aplicatia "Firebase" 
+
+DATABASE:
+	* SQL Server
+
+
+NUME APLCATIE: Pocket TradePro
