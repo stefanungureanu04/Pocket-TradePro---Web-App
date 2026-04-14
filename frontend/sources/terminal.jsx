@@ -4110,7 +4110,7 @@ function DashboardApp() {
                 </main>
             </div>
             {tradeTarget && (
-                <TradeModal target={tradeTarget} holdings={holdings} cash={cash} onClose={() => setTrade(null)} onConfirm={handleTradeConfirm} />
+                <TradeModal target={tradeTarget} holdings={allHoldings} cash={cash} onClose={() => setTrade(null)} onConfirm={handleTradeConfirm} />
             )}
             {bondTrade && (
                 <BondTradeModal target={bondTrade} cash={cash} onClose={() => setBondTrade(null)} onConfirm={qty => handleBondSectionConfirm(bondTrade, qty)} />
