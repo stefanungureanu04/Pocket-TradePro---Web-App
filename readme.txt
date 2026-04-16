@@ -1,6 +1,6 @@
-================================================================================
-  POCKET TRADEPRO — Platforma de tranzactionare actiuni
   Tema de casa — Tehnologii Web 2026
+================================================================================
+  POCKET TRADEPRO — Platforma de trading online
 ================================================================================
 
 
@@ -198,9 +198,6 @@ si elemente vizuale pe care le consider interesante:
 
 6. TESTARE
 --------------------------------------------------------------------------------
-  Browsere: Google Chrome si Mozilla Firefox (ultimele versiuni)
-  Site-ul este responsive pentru majoritate platformelor de mobile (dimensiune medie: 380 x 640)
-
   Conexiunea la internet nu este necesara pentru functionarea de baza.
   Cateva resurse externe (steaguri tari, texturile globului)
   necesita internet pentru a se incarca corect.
