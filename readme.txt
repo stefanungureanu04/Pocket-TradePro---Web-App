@@ -8,14 +8,12 @@
 --------------------------------------------------------------------------------
 Am ales sa implementez o platforma de tranzactionare financiara inspirata din
 aplicatii reale precum XTB si Revolut, pe care am numit-o Pocket TradePro.
-Ideea a venit din interesul meu pentru piete financiare si din dorinta de a
-construi ceva mai complex decat un magazin online clasic.
 
 Platforma permite utilizatorilor sa vizualizeze piete financiare (actiuni,
 criptomonede, obligatiuni, marfuri, ETF-uri), sa efectueze tranzactii simulate,
 sa isi gestioneze portofoliul si sa acceseze stiri si evenimente de piata.
 Toate datele sunt simulate (mock), deci nu este necesara o conexiune la un API
-extern pentru testare.
+extern pentru testare. Acesta va fi adaugat odata cu dezvoltarea componentei de backend.
 
 
 2. ARHITECTURA TEMPLATE-URILOR
@@ -79,7 +77,7 @@ FLUXUL PRINCIPAL:
      (componenta GallerySlider cu 4 imagini si puncte pentru navigare).
 
   b) Inregistrare (register.html)
-     Completez: First name, Last name, Email, Password, Confirm password.
+     Completare: First name, Last name, Email, Password, Confirm password.
      Parola trebuie sa aiba minim 8 caractere, o cifra, o litera mare si
      un caracter special. Dupa inregistrare are loc redirectarea automata catre terminal.html.
 
@@ -177,20 +175,12 @@ si elemente vizuale pe care le consider interesante:
   - Panou analitic in sectiunea Transactions cu donut chart interactiv
     (hover pe segmente si legenda), top simboluri cumparate si volume per tip
 
-  - Design system propriu cu variabile CSS, tema dark/light comutabila instant
-    si persistata in localStorage, cu detectia temei inainte de render React
-    pentru a evita flash-ul de culoare la incarcare
-
-  - Mod guest implementat via URL param (?mode=guest) cu restrictionare
-    granulara pe sectiuni si actiuni individuale
+  - Tema dark/light comutabila instant si persistata in localStorage, cu detectia 
+    temei inainte de render React pentru a evita flash-ul de culoare la incarcare
 
   - Pagina de administrare cu 8 sectiuni functionale, incluzand un panou
     de statistici cu grila de performanta pe clase de active, suport chat
     in stil WhatsApp pe mobil si un sistem de notificari cu navigare directa
-
-  - Responsive complet pe toate paginile (breakpoint unic 768px): sidebar
-    drawer cu backdrop, tabele cu coloane selective, filtre dropdown in loc
-    de pills, exchange list ca rows verticale
 
   - MarketSessionsDisplay cu 12 burse mondiale, ore locale live,
     logo oficial per bursa si badge Open/Closed calculat din timezone
