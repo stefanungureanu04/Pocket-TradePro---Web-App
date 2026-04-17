@@ -73,22 +73,22 @@ NAVIGARE (fara server backend):
 FLUXUL PRINCIPAL:
 
   a) Homepage (index.html)
-     Pagina de start cu prezentarea platformei. De aici pot merge la
-     inregistrare, autentificare sau pot intra ca guest.
+     Pagina de start cu prezentarea platformei. De aici se poate merge la
+     inregistrare, autentificare sau intrare ca guest.
      Contine o galerie de imagini cu derulare automata la 3 secunde
      (componenta GallerySlider cu 4 imagini si puncte pentru navigare).
 
   b) Inregistrare (register.html)
      Completez: First name, Last name, Email, Password, Confirm password.
      Parola trebuie sa aiba minim 8 caractere, o cifra, o litera mare si
-     un caracter special. Dupa inregistrare sunt redirectat automat la terminal.
+     un caracter special. Dupa inregistrare are loc redirectarea automata catre terminal.html.
 
   c) Autentificare (login.html)
-     Introduc email si parola, apoi apas Sign In.
+     Se introduc email si parola, apoi se apasa Sign In.
      Contul de admin: 
             email: admin@tradepro.com 
             password: administrator
-     Orice alt cont merge la terminal.html.
+     Orice alt cont este redirectionat catre terminal.html.
 
   d) Terminal (terminal.html) — aplicatia principala
      Sidebar cu sectiunile disponibile:
