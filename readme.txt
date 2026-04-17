@@ -195,6 +195,9 @@ si elemente vizuale pe care le consider interesante:
   - MarketSessionsDisplay cu 12 burse mondiale, ore locale live,
     logo oficial per bursa si badge Open/Closed calculat din timezone
 
+  - Culoarea secundara din tema paginilor (verde) este aleasă în acord
+    cu logo-ul aplicatiei.
+
 
 6. TESTARE
 --------------------------------------------------------------------------------
